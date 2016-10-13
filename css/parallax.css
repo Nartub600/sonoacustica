@@ -1,0 +1,105 @@
+/* -------------------------------------------------- */
+/* section settings and parralax */
+/* -------------------------------------------------- */
+section{
+padding:90px 0 90px 0;
+}
+#testimonial-full{
+background:#116493;
+}
+#subheader{
+background:url(../images/nosotros.jpg) top fixed;
+}
+
+
+/* -------------------------------------------------- */
+/* light template */
+.light #page-pricing{
+background:url(../images/bg-blur-1-light.jpg) top fixed;
+}
+.light  #page-contact{
+background:url(../images/bg-blur-2-light.jpg) top fixed;
+}
+.light  #page-why-choose-us{
+background:url(../images/bg-blur-3-light.jpg) top fixed;
+}
+.light  #logo-full{
+background:#bbb;
+}
+.light  #page-include{
+	background:#2079ab;
+}
+
+
+
+/* -------------------------------------------------- */
+/* dark template */
+.dark section{
+background:#E0EDD1;
+color:#294753;
+}
+.dark #home{
+background:url(../images/home.jpg) top fixed;
+height: 100vh;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+}
+@media (min-width: 300px) and (max-width: 979px) {
+  .dark #home{
+  background:url(../images/home.jpg) top fixed;
+  height: 100vh;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+	background-attachment:scroll;
+  }
+}
+.dark  #contacto{
+background:url(../images/contacto.jpg) top fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+}
+.dark  #page-why-choose-us{
+background:url(../images/bg-blur-3.jpg) top fixed;
+}
+.dark  #productos{
+background:url(../images/productos.jpg) top fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+height: 50vh;
+}
+.dark  #nosotros{
+background:url(../images/nosotros.jpg) top fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+}
+.dark  #logo-full{
+background:#111;
+}
+.dark #page-include{
+	/*background:#2079ab;*/
+}
+.dark #separador{
+	height: 10vh;
+}
+
+.transparent{
+	background:url(../images/dotblack40.png) !important;
+}
+
+
