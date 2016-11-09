@@ -18,23 +18,28 @@ if($nombre != '' && $email != ''){
   </div>
   <br>
   <img src="http://www.sonoacustica.com.ar/images/logo.png">';
-  
-  $ruta='PHPMailer/class.phpmailer.php'; 
+
+  $ruta='PHPMailer/class.phpmailer.php';
   require($ruta);
   $mail = new PHPMailer();
-  $mail->IsHTML(true);
-  $mail->FromName = $nombre;
-  $mail->From = "info@sonoacustica.com.ar";
-  $mail->AddAddress("info@sonoacustica.com.ar");
-  $mail->AddReplyTo($email);
-  $mail->CharSet = 'UTF-8';
-  $mail->WordWrap = 50;
-  $mail->Mailer = "smtp";
+  $mail->isSMTP();
+  $mail->Host = "smtp.gmail.com";
   $mail->SMTPAuth = true;
-  $mail->Port = 25;
-  $mail->Host = "mail.sonoacustica.com.ar";  
-  $mail->Username = "info@sonoacustica.com.ar";
-  $mail->Password = "";
+  $mail->Username = "spotty.pc@gmail.com";
+  $mail->Password = "Kensentme2";
+  $mail->SMTPSecure = "tls";
+  $mail->Port = 587;
+
+  $mail->setFrom = ($email, $nombre);
+  $mail->AddAddress("info@sonoacustica.com.ar");
+  $mail->AddAddress("maimar@gmail.com");
+  $mail->AddReplyTo($email);
+
+  // $mail->IsHTML(true);
+  // $mail->CharSet = 'UTF-8';
+  // $mail->WordWrap = 50;
+  // $mail->Mailer = "smtp";
+
   $mail->Subject = 'Consulta web Sonoacústica';
   $mail->Body = $CuerpoEmail;
   $mail->Send();
