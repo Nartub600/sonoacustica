@@ -23,12 +23,12 @@ if($nombre != '' && $email != ''){
   require($ruta);
   $mail = new PHPMailer();
   $mail->isSMTP();
-  $mail->Host = "smtp.gmail.com";
-  $mail->SMTPAuth = true;
-  $mail->Username = "spotty.pc@gmail.com";
-  $mail->Password = "Kensentme2";
-  $mail->SMTPSecure = "tls";
-  $mail->Port = 587;
+  $mail->Host = "100.100.17.33";
+  $mail->SMTPAuth = false;
+  // $mail->Username = "spotty.pc@gmail.com";
+  // $mail->Password = "Kensentme2";
+  // $mail->SMTPSecure = "tls";
+  $mail->Port = 25;
 
   $mail->setFrom = ($email, $nombre);
   $mail->AddAddress("info@sonoacustica.com.ar");
