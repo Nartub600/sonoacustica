@@ -13,7 +13,7 @@ if($nombre != '' && $email != ''){
   <b>Nombre</b>: '.$nombre.'<br>
   <b>Empresa</b>: '.$empresa.'<br>
   <b>E-mail</b>: '.$email.'<br>
-  <b>Tel&eacute;fono fijo</b>: '.$telefono.'<br>
+  <b>Tel&eacute;fono</b>: '.$telefono.'<br>
   <b>Mensaje</b>: <br>'.$mensaje.'<br>
   </div>
   <br>
