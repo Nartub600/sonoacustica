@@ -8,11 +8,11 @@ $mensaje = nl2br($_POST['mensaje'], false);
 if($nombre != '' && $email != ''){
 
   $CuerpoEmail = '
-  <h1>Consulta web Sonoac&uacute;stica</h1><br><br>
+  <h1>Consulta web sonoAcústica</h1><br><br>
   <div style="font-family: Arial;font-size: 14px;line-height:20px;">
   <b>Nombre</b>: '.$nombre.'<br>
   <b>Empresa</b>: '.$empresa.'<br>
-  <b>e-mail</b>: '.$email.'<br>
+  <b>E-mail</b>: '.$email.'<br>
   <b>Tel&eacute;fono fijo</b>: '.$telefono.'<br>
   <b>Mensaje</b>: <br>'.$mensaje.'<br>
   </div>
@@ -40,7 +40,7 @@ if($nombre != '' && $email != ''){
   $mail->WordWrap = 50;
   // $mail->Mailer = "smtp";
 
-  $mail->Subject = 'Consulta web Sonoac�stica';
+  $mail->Subject = 'Consulta web sonoAcústica';
   $mail->Body = $CuerpoEmail;
   $mail->Send();
 
