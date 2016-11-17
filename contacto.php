@@ -25,12 +25,12 @@ if($nombre != '' && $email != ''){
   $mail->isSMTP();
   $mail->Host = "100.100.17.33";
   $mail->SMTPAuth = false;
+  $mail->Port = 25;
   // $mail->Username = "spotty.pc@gmail.com";
   // $mail->Password = "Kensentme2";
   // $mail->SMTPSecure = "tls";
-  $mail->Port = 25;
 
-  $mail->setFrom = ($email, $nombre);
+  $mail->setFrom($email, $nombre);
   $mail->AddAddress("info@sonoacustica.com.ar");
   $mail->AddAddress("maimar@gmail.com");
   $mail->AddReplyTo($email);
