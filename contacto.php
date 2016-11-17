@@ -32,12 +32,12 @@ if($nombre != '' && $email != ''){
 
   $mail->setFrom($email, $nombre);
   $mail->AddAddress("info@sonoacustica.com.ar");
-  $mail->AddAddress("maimar@gmail.com");
+  // $mail->AddAddress("maimar@gmail.com");
   $mail->AddReplyTo($email);
 
-  // $mail->IsHTML(true);
-  // $mail->CharSet = 'UTF-8';
-  // $mail->WordWrap = 50;
+  $mail->IsHTML(true);
+  $mail->CharSet = 'UTF-8';
+  $mail->WordWrap = 50;
   // $mail->Mailer = "smtp";
 
   $mail->Subject = 'Consulta web Sonoacústica';
